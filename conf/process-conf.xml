@@ -1,0 +1,27 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <bean id="exportCO" 
+          class="com.salesforce.dataloader.process.ProcessRunner"
+          singleton="false">
+        <description>"DESCRIPTION"</description>
+        <property name="name" value="exportCOProcess"/>
+        <property name="configOverrideMap">
+            <map>
+                <entry key="sfdc.endpoint" value="<ENDPOINT>"/>
+                <entry key="sfdc.username" value="<USERNAME>"/>
+                <entry key="sfdc.password" value="<PASSWORD>"/>
+                <entry key="process.encryptionKeyFile" value="<ENCRYPTIONKEYFILE>"/>
+                <entry key="sfdc.timeoutSecs" value="600"/>
+                <entry key="sfdc.loadBatchSize" value="10000"/>
+                <entry key="sfdc.useBulkApi" value="true"/>
+                <entry key="sfdc.bulkApiCheckStatusInterval" value="30000"/>
+                <entry key="sfdc.entity" value="<ENTITY>"/>
+                <entry key="sfdc.extractionSOQL" value="<SOQL>"/>
+                <entry key="process.operation" value="extract"/>
+                <entry key="dataAccess.name" value="<OUTPUTFILE>"/>
+                <entry key="dataAccess.type" value="csvWrite"/>
+                <entry key="process.initialLastRunDate" value="2005-12-01T00:00:00.000-0800"/>
+            </map>
+        </property>
+    </bean>
+</beans>
