@@ -1,5 +1,5 @@
 # Salesforce Dataloader実行image
-FROM gcr.io/common-jinzaisystem-tool/gcloud-java:1.8.0
+FROM gcr.io/aiplanner-258406/gcloud-java:1.0.0
 
 # ディレクトリ作成
 RUN mkdir -p /opt/dataloader/bin/lib && \

@@ -1,7 +1,0 @@
-[Credentials]
-aws_access_key_id = <AWS_ACCESS_KEY_ID>
-aws_secret_access_key = <AWS_SECRET_ACCESS_KEY>
-
-[s3]
-use-sigv4 = True
-host = <AWS_S3_ENDPOINT>

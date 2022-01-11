@@ -16,7 +16,7 @@ Docker for Windows + Git Bash で動きます。
 
 ```bash
 TEST_IMAGE=[ローカルで実行するDockerイメージID]
-HOST_BASE_DIR=[jinzaibank-gcp-dockerをクローンしたディレクトリのフルパス]/salesforce-dataloader
+HOST_BASE_DIR=[gcp-dockerをクローンしたディレクトリのフルパス]/salesforce-dataloader
 
 SERVICE_ACCOUNT_CREDENTIALS=$(cat $HOST_BASE_DIR/tests/[サービスアカウントKeyファイル]| base64)
 
